@@ -1,0 +1,20 @@
+{
+	"name": "DS_BINARY",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "DS_READ_LOOKUP",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "DS_READ_LOOKUP"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "blobcontainer"
+			}
+		}
+	}
+}
