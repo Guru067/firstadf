@@ -19,7 +19,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": {
-					"value": "@dataset().FILENAME",
+					"value": "@dataset().TARGET_FILENAME",
 					"type": "Expression"
 				},
 				"folderPath": "Proceesedfiles",
