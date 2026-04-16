@@ -5,11 +5,17 @@
 		"factoryName": {
 			"value": "firstadf067"
 		},
+		"DS_READ_LOOKUP_accountKey": {
+			"value": ""
+		},
 		"LS_ADLS_TARGET_CSV_accountKey": {
 			"value": ""
 		},
 		"Ls_ADLS_SOURCE_CSV_accountKey": {
 			"value": ""
+		},
+		"DS_READ_LOOKUP_properties_typeProperties_url": {
+			"value": "https://stoageaccount089.dfs.core.windows.net/"
 		},
 		"LS_ADLS_TARGET_CSV_properties_typeProperties_url": {
 			"value": "https://stoageaccount089.dfs.core.windows.net/"

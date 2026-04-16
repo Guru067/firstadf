@@ -7,6 +7,10 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "firstadf067"
 		},
+		"DS_READ_LOOKUP_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'DS_READ_LOOKUP'"
+		},
 		"LS_ADLS_TARGET_CSV_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'LS_ADLS_TARGET_CSV'"
@@ -14,6 +18,10 @@
 		"Ls_ADLS_SOURCE_CSV_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'Ls_ADLS_SOURCE_CSV'"
+		},
+		"DS_READ_LOOKUP_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://stoageaccount089.dfs.core.windows.net/"
 		},
 		"LS_ADLS_TARGET_CSV_properties_typeProperties_url": {
 			"type": "string",
@@ -50,11 +58,17 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"DS_READ_LOOKUP_accountKey": {
+						"value": "[parameters('DS_READ_LOOKUP_accountKey')]"
+					},
 					"LS_ADLS_TARGET_CSV_accountKey": {
 						"value": "[parameters('LS_ADLS_TARGET_CSV_accountKey')]"
 					},
 					"Ls_ADLS_SOURCE_CSV_accountKey": {
 						"value": "[parameters('Ls_ADLS_SOURCE_CSV_accountKey')]"
+					},
+					"DS_READ_LOOKUP_properties_typeProperties_url": {
+						"value": "[parameters('DS_READ_LOOKUP_properties_typeProperties_url')]"
 					},
 					"LS_ADLS_TARGET_CSV_properties_typeProperties_url": {
 						"value": "[parameters('LS_ADLS_TARGET_CSV_properties_typeProperties_url')]"
